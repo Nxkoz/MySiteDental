@@ -1,0 +1,411 @@
+# English translations for Vizirov Dental Clinic
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+
+msgid "Ваша усмішка в надійних руках"
+msgstr "Your Smile in Safe Hands"
+
+msgid "Ваша усмішка —"
+msgstr "Your Smile —"
+
+msgid "наша"
+msgstr "our"
+
+msgid "турбота"
+msgstr "Care"
+
+msgid "Клініка №1 у Києві"
+msgstr "Kyiv's #1 Dental Clinic"
+
+msgid "Сучасна стоматологія без болю та страху. Понад 15 років досвіду, передове обладнання та команда професіоналів, яким ви можете довіряти."
+msgstr "Modern dentistry without pain or fear. Over 15 years of experience, cutting-edge equipment and a team of professionals you can trust."
+
+msgid "Записатися онлайн"
+msgstr "Book Online"
+
+msgid "Наші послуги"
+msgstr "Our Services"
+
+msgid "років досвіду"
+msgstr "years of experience"
+
+msgid "пацієнтів"
+msgstr "patients"
+
+msgid "задоволених клієнтів"
+msgstr "satisfied clients"
+
+msgid "Безпечно та комфортно"
+msgstr "Safe & Comfortable"
+
+msgid "Стерильність гарантована"
+msgstr "Sterility guaranteed"
+
+msgid "Рейтинг 4.9 / 5"
+msgstr "Rating 4.9 / 5"
+
+msgid "На основі 1200+ відгуків"
+msgstr "Based on 1200+ reviews"
+
+msgid "Головна"
+msgstr "Home"
+
+msgid "Послуги"
+msgstr "Services"
+
+msgid "Про клініку"
+msgstr "About"
+
+msgid "Контакти"
+msgstr "Contacts"
+
+msgid "Записатися"
+msgstr "Book Appointment"
+
+msgid "Пн–Пт: 9:00–20:00 | Сб: 9:00–16:00"
+msgstr "Mon–Fri: 9:00–20:00 | Sat: 9:00–16:00"
+
+msgid "вул. Хрещатик, 1, Київ"
+msgstr "1 Khreshchatyk St, Kyiv"
+
+msgid "Сучасна стоматологічна клініка з передовим обладнанням та командою досвідчених фахівців у серці Києва."
+msgstr "Modern dental clinic with advanced equipment and a team of experienced specialists in the heart of Kyiv."
+
+msgid "Навігація"
+msgstr "Navigation"
+
+msgid "Лікування карієсу"
+msgstr "Caries Treatment"
+
+msgid "Відбілювання зубів"
+msgstr "Teeth Whitening"
+
+msgid "Імплантація"
+msgstr "Dental Implants"
+
+msgid "Брекети та елайнери"
+msgstr "Braces & Aligners"
+
+msgid "Дитяча стоматологія"
+msgstr "Children's Dentistry"
+
+msgid "Всі права захищені."
+msgstr "All rights reserved."
+
+msgid "Ліцензія"
+msgstr "License"
+
+msgid "Пн–Пт: 9:00–20:00"
+msgstr "Mon–Fri: 9:00–20:00"
+
+msgid "Сб: 9:00–16:00"
+msgstr "Sat: 9:00–16:00"
+
+msgid "Безпечно"
+msgstr "Safe"
+
+msgid "Повна стерилізація інструментів та одноразові витратні матеріали"
+msgstr "Full instrument sterilisation and single-use disposables"
+
+msgid "Сучасно"
+msgstr "Modern"
+
+msgid "Цифрові технології 3D-діагностики та лікування"
+msgstr "Digital 3D diagnostic and treatment technologies"
+
+msgid "Професійно"
+msgstr "Professional"
+
+msgid "Лікарі з досвідом від 10 років та постійним підвищенням кваліфікації"
+msgstr "Doctors with 10+ years of experience and ongoing professional development"
+
+msgid "З турботою"
+msgstr "With Care"
+
+msgid "Комфортна атмосфера та індивідуальний підхід до кожного"
+msgstr "Comfortable atmosphere and individual approach to every patient"
+
+msgid "Що ми лікуємо"
+msgstr "What We Treat"
+
+msgid "Повний спектр стоматологічної допомоги для всієї родини"
+msgstr "Full range of dental care for the whole family"
+
+msgid "від"
+msgstr "from"
+
+msgid "Записатися на консультацію"
+msgstr "Book a Consultation"
+
+msgid "Всі послуги"
+msgstr "All Services"
+
+msgid "Первинна консультація — безкоштовно!"
+msgstr "First Consultation — Free!"
+
+msgid "Запишіться прямо зараз і отримайте безкоштовний огляд у нашого спеціаліста"
+msgstr "Book right now and get a free examination from our specialist"
+
+msgid "Записатися безкоштовно"
+msgstr "Book for Free"
+
+msgid "Наші спеціалісти"
+msgstr "Our Specialists"
+
+msgid "Команда лікарів"
+msgstr "Our Doctors"
+
+msgid "Досвідчені та уважні професіонали"
+msgstr "Experienced and attentive professionals"
+
+msgid "Візіров Олексій Сергійович"
+msgstr "Oleksiy Vizirov"
+
+msgid "Головний лікар, імплантолог"
+msgstr "Chief Doctor, Implantologist"
+
+msgid "Стаж 18 років · К.м.н."
+msgstr "18 years experience · PhD"
+
+msgid "Петренко Марія Юріївна"
+msgstr "Maria Petrenko"
+
+msgid "Ортодонт"
+msgstr "Orthodontist"
+
+msgid "Стаж 11 років"
+msgstr "11 years experience"
+
+msgid "Коваленко Олена Іванівна"
+msgstr "Olena Kovalenko"
+
+msgid "Хірург, імплантолог"
+msgstr "Surgeon, Implantologist"
+
+msgid "Стаж 14 років"
+msgstr "14 years experience"
+
+msgid "Мельник Дмитро Павлович"
+msgstr "Dmytro Melnyk"
+
+msgid "Дитячий стоматолог"
+msgstr "Children's Dentist"
+
+msgid "Стаж 9 років"
+msgstr "9 years experience"
+
+msgid "Відгуки"
+msgstr "Reviews"
+
+msgid "Що кажуть пацієнти"
+msgstr "What Patients Say"
+
+msgid "\"Довго боялась стоматологів, але тут все змінилось. Лікар дуже уважний, лікування пройшло без болю. Дякую!\""
+msgstr "\"I was afraid of dentists for years, but here everything changed. The doctor is very attentive, the treatment was painless. Thank you!\""
+
+msgid "Анна Коваль"
+msgstr "Anna Koval"
+
+msgid "Пацієнт з 2022 року"
+msgstr "Patient since 2022"
+
+msgid "\"Поставили імплант — результат перевершив очікування. Команда професійна, обладнання сучасне. Рекомендую всім!\""
+msgstr "\"Got an implant — the result exceeded expectations. Professional team, modern equipment. Highly recommend!\""
+
+msgid "Михайло Василенко"
+msgstr "Mykhailo Vasylenko"
+
+msgid "Пацієнт з 2020 року"
+msgstr "Patient since 2020"
+
+msgid "\"Привела дитину — вона була у захваті! Дитячий лікар знайшов підхід, малюк більше не боїться зубного. Величезне дякую!\""
+msgstr "\"Brought my child — she was delighted! The children's doctor found the right approach and now the kid is no longer afraid of the dentist. Huge thank you!\""
+
+msgid "Ольга Семенова"
+msgstr "Olga Semenova"
+
+msgid "Пацієнт з 2023 року"
+msgstr "Patient since 2023"
+
+msgid "Телефон"
+msgstr "Phone"
+
+msgid "Адреса"
+msgstr "Address"
+
+msgid "Графік роботи"
+msgstr "Working Hours"
+
+msgid "Пн–Пт 9:00–20:00"
+msgstr "Mon–Fri 9:00–20:00"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Послуги незабаром з'являться"
+msgstr "Services coming soon"
+
+msgid "Повний спектр стоматологічних послуг для всієї родини"
+msgstr "Full range of dental services for the whole family"
+
+msgid "Не знайшли потрібну послугу?"
+msgstr "Didn't find the service you need?"
+
+msgid "Зв'яжіться з нами — ми обов'язково допоможемо"
+msgstr "Contact us — we'll definitely help"
+
+msgid "Зв'язатися"
+msgstr "Contact Us"
+
+msgid "15 років бездоганної роботи та тисячі задоволених пацієнтів"
+msgstr "15 years of flawless work and thousands of satisfied patients"
+
+msgid "Наша історія"
+msgstr "Our Story"
+
+msgid "Клініка, якій довіряють"
+msgstr "The Clinic You Can Trust"
+
+msgid "Клініка Vizirov Dental заснована у 2009 році з однією метою — зробити якісну стоматологію доступною та комфортною для кожного. За ці роки ми виросли з невеликого кабінету до сучасного медичного центру з 12 кабінетами та командою з 20 спеціалістів у самому серці Києва."
+msgstr "Vizirov Dental was founded in 2009 with one goal — to make quality dentistry accessible and comfortable for everyone. Over the years we have grown from a small practice to a modern medical centre with 12 treatment rooms and a team of 20 specialists in the heart of Kyiv."
+
+msgid "Ми постійно інвестуємо в найновіше обладнання та підвищення кваліфікації наших лікарів, щоб ви отримували лікування на рівні європейських стандартів."
+msgstr "We continuously invest in the latest equipment and our doctors' professional development, so you receive treatment at European standards."
+
+msgid "Ліцензована клініка"
+msgstr "Licensed clinic"
+
+msgid "Цифровий рентген"
+msgstr "Digital X-ray"
+
+msgid "3D-томографія"
+msgstr "3D CT scan"
+
+msgid "Лазерне лікування"
+msgstr "Laser treatment"
+
+msgid "Седація (наркоз)"
+msgstr "Sedation (anaesthesia)"
+
+msgid "Дитяча зона"
+msgstr "Children's zone"
+
+msgid "лікарів"
+msgstr "doctors"
+
+msgid "років на ринку"
+msgstr "years on the market"
+
+msgid "Спеціалісти"
+msgstr "Specialists"
+
+msgid "Наша команда"
+msgstr "Our Team"
+
+msgid "Ми завжди раді вас бачити"
+msgstr "We are always happy to see you"
+
+msgid "вул. Хрещатик, 1"
+msgstr "1 Khreshchatyk St"
+
+msgid "Київ, 01001"
+msgstr "Kyiv, 01001"
+
+msgid "м. Хрещатик (2 хв. пішки)"
+msgstr "Khreshchatyk metro (2 min walk)"
+
+msgid "Пн – Пт: 9:00 – 20:00"
+msgstr "Mon – Fri: 9:00 – 20:00"
+
+msgid "Сб: 9:00 – 16:00"
+msgstr "Sat: 9:00 – 16:00"
+
+msgid "Нд: вихідний"
+msgstr "Sun: closed"
+
+msgid "Vizirov Dental на карті"
+msgstr "Vizirov Dental on the Map"
+
+msgid "Відкрити в Google Maps"
+msgstr "Open in Google Maps"
+
+msgid "Напишіть нам"
+msgstr "Write to Us"
+
+msgid "Ваше ім'я"
+msgstr "Your name"
+
+msgid "Іваненко Іван"
+msgstr "John Smith"
+
+msgid "Повідомлення"
+msgstr "Message"
+
+msgid "Ваше запитання..."
+msgstr "Your question..."
+
+msgid "Надіслати"
+msgstr "Send"
+
+msgid "Запис на прийом"
+msgstr "Book an Appointment"
+
+msgid "Заповніть форму і ми зв'яжемося з вами для підтвердження"
+msgstr "Fill in the form and we will contact you to confirm"
+
+msgid "Онлайн-запис"
+msgstr "Online Booking"
+
+msgid "Заповніть всі поля — ми передзвонимо протягом 30 хвилин"
+msgstr "Fill in all fields — we will call you back within 30 minutes"
+
+msgid "Я погоджуюся на обробку персональних даних"
+msgstr "I agree to the processing of my personal data"
+
+msgid "Записатися на прийом"
+msgstr "Book an Appointment"
+
+msgid "Як відбувається запис"
+msgstr "How Booking Works"
+
+msgid "Заповніть форму"
+msgstr "Fill in the form"
+
+msgid "Вкажіть контактні дані та зручний час"
+msgstr "Enter your contact details and preferred time"
+
+msgid "Підтвердження"
+msgstr "Confirmation"
+
+msgid "Ми передзвонимо протягом 30 хвилин"
+msgstr "We will call you back within 30 minutes"
+
+msgid "Приходьте на прийом"
+msgstr "Come to your appointment"
+
+msgid "Чекаємо вас у призначений час"
+msgstr "We are waiting for you at the appointed time"
+
+msgid "Запис прийнято"
+msgstr "Booking Received"
+
+msgid "Запис прийнято!"
+msgstr "Booking Received!"
+
+msgid "Дякуємо! Ми отримали вашу заявку і зв'яжемося з вами протягом 30 хвилин для підтвердження прийому."
+msgstr "Thank you! We have received your request and will contact you within 30 minutes to confirm your appointment."
+
+msgid "Якщо у вас є питання, телефонуйте:"
+msgstr "If you have any questions, call us:"
+
+msgid "Працюємо Пн–Пт з 9:00 до 20:00"
+msgstr "We work Mon–Fri from 9:00 to 20:00"
+
+msgid "На головну"
+msgstr "Back to Home"
+
+msgid "Записатися знову"
+msgstr "Book Again"

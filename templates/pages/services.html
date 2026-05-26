@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Послуги" %} — Vizirov Dental Clinic{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container text-center">
+    <h1 class="page-hero-title" data-aos="fade-up">{% trans "Наші послуги" %}</h1>
+    <p class="page-hero-desc" data-aos="fade-up" data-aos-delay="100">{% trans "Повний спектр стоматологічних послуг для всієї родини" %}</p>
+    <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="150">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a href="{% url 'pages:home' %}">{% trans "Головна" %}</a></li>
+        <li class="breadcrumb-item active">{% trans "Послуги" %}</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    {% if services %}
+    <div class="row g-4">
+      {% for service in services %}
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card h-100">
+          <div class="service-icon"><i class="{{ service.icon }}"></i></div>
+          <h5 class="fw-700 mt-3 mb-2">{{ service.name }}</h5>
+          <p class="text-muted mb-3">{{ service.description }}</p>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="service-price fw-700">{% trans "від" %} {{ service.price_from }} ₴</span>
+            <a href="{% url 'appointments:book' %}?service={{ service.id }}" class="btn btn-primary rounded-pill px-4">
+              {% trans "Записатися" %}
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="text-center py-5">
+      <i class="fa fa-tooth fa-4x text-primary mb-4 d-block"></i>
+      <h4>{% trans "Послуги незабаром з'являться" %}</h4>
+      <a href="{% url 'appointments:book' %}" class="btn btn-primary rounded-pill px-5 mt-2">{% trans "Записатися" %}</a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="cta-section py-5">
+  <div class="container">
+    <div class="cta-inner" data-aos="zoom-in">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h3 class="text-white fw-700 mb-2">{% trans "Не знайшли потрібну послугу?" %}</h3>
+          <p class="text-white-50 mb-0">{% trans "Зв'яжіться з нами — ми обов'язково допоможемо" %}</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a href="{% url 'pages:contact' %}" class="btn btn-light btn-lg rounded-pill px-5 fw-600 text-primary">{% trans "Зв'язатися" %}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

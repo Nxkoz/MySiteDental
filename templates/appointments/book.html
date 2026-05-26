@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Запис на прийом" %} — Vizirov Dental Clinic{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container text-center">
+    <h1 class="page-hero-title" data-aos="fade-up">{% trans "Запис на прийом" %}</h1>
+    <p class="page-hero-desc" data-aos="fade-up" data-aos-delay="100">{% trans "Заповніть форму і ми зв'яжемося з вами для підтвердження" %}</p>
+    <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="150">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a href="{% url 'pages:home' %}">{% trans "Головна" %}</a></li>
+        <li class="breadcrumb-item active">{% trans "Запис на прийом" %}</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5 justify-content-center">
+      <div class="col-lg-7" data-aos="fade-up">
+        <div class="book-form-wrap">
+          <h4 class="fw-700 mb-1">{% trans "Онлайн-запис" %}</h4>
+          <p class="text-muted mb-4">{% trans "Заповніть всі поля — ми передзвонимо протягом 30 хвилин" %}</p>
+          <form method="post" novalidate>
+            {% csrf_token %}
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label fw-500">{{ form.name.label }}</label>
+                {{ form.name }}
+                {% if form.name.errors %}<div class="text-danger small mt-1">{{ form.name.errors.0 }}</div>{% endif %}
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-500">{{ form.phone.label }}</label>
+                {{ form.phone }}
+                {% if form.phone.errors %}<div class="text-danger small mt-1">{{ form.phone.errors.0 }}</div>{% endif %}
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-500">{{ form.email.label }}</label>
+                {{ form.email }}
+                {% if form.email.errors %}<div class="text-danger small mt-1">{{ form.email.errors.0 }}</div>{% endif %}
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-500">{{ form.service.label }}</label>
+                {{ form.service }}
+                {% if form.service.errors %}<div class="text-danger small mt-1">{{ form.service.errors.0 }}</div>{% endif %}
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-500">{{ form.date.label }}</label>
+                {{ form.date }}
+                {% if form.date.errors %}<div class="text-danger small mt-1">{{ form.date.errors.0 }}</div>{% endif %}
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-500">{{ form.time.label }}</label>
+                {{ form.time }}
+                {% if form.time.errors %}<div class="text-danger small mt-1">{{ form.time.errors.0 }}</div>{% endif %}
+              </div>
+              <div class="col-12">
+                <label class="form-label fw-500">{{ form.message.label }}</label>
+                {{ form.message }}
+              </div>
+              <div class="col-12">
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" id="agree" required>
+                  <label class="form-check-label text-muted small" for="agree">
+                    {% trans "Я погоджуюся на обробку персональних даних" %}
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill fw-600 btn-lg">
+                  <i class="fa fa-calendar-check me-2"></i>{% trans "Записатися на прийом" %}
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-left">
+        <div class="book-info-wrap">
+          <h5 class="fw-700 mb-4">{% trans "Як відбувається запис" %}</h5>
+          <div class="book-step">
+            <div class="book-step-num">1</div>
+            <div>
+              <div class="fw-600 small">{% trans "Заповніть форму" %}</div>
+              <div class="text-muted small">{% trans "Вкажіть контактні дані та зручний час" %}</div>
+            </div>
+          </div>
+          <div class="book-step">
+            <div class="book-step-num">2</div>
+            <div>
+              <div class="fw-600 small">{% trans "Підтвердження" %}</div>
+              <div class="text-muted small">{% trans "Ми передзвонимо протягом 30 хвилин" %}</div>
+            </div>
+          </div>
+          <div class="book-step">
+            <div class="book-step-num">3</div>
+            <div>
+              <div class="fw-600 small">{% trans "Приходьте на прийом" %}</div>
+              <div class="text-muted small">{% trans "Чекаємо вас у призначений час" %}</div>
+            </div>
+          </div>
+          <hr class="my-4">
+          <h6 class="fw-700 mb-3">{% trans "Контакти" %}</h6>
+          <p class="small text-muted mb-2"><i class="fa fa-phone text-primary me-2"></i><a href="tel:+380441234567" class="text-muted text-decoration-none">+38 (044) 123-45-67</a></p>
+          <p class="small text-muted mb-2"><i class="fa fa-clock text-primary me-2"></i>{% trans "Пн–Пт: 9:00–20:00" %}</p>
+          <p class="small text-muted mb-0"><i class="fa fa-clock text-primary me-2"></i>{% trans "Сб: 9:00–16:00" %}</p>
+          <div class="alert alert-primary mt-4 rounded-3 small">
+            <i class="fa fa-gift me-2"></i><strong>{% trans "Первинна консультація — безкоштовно!" %}</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,295 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}Vizirov Dental Clinic Kyiv — {% trans "Ваша усмішка в надійних руках" %}{% endblock %}
+
+{% block content %}
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center min-vh-hero">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="badge-pill mb-3"><i class="fa fa-star me-1"></i> {% trans "Клініка №1 у Києві" %}</span>
+        <h1 class="hero-title">{% trans "Ваша усмішка —" %}<br>{% trans "наша" %} <span class="text-accent">{% trans "турбота" %}</span></h1>
+        <p class="hero-desc">{% trans "Сучасна стоматологія без болю та страху. Понад 15 років досвіду, передове обладнання та команда професіоналів, яким ви можете довіряти." %}</p>
+        <div class="d-flex gap-3 flex-wrap mt-4">
+          <a href="{% url 'appointments:book' %}" class="btn btn-primary btn-lg rounded-pill px-5 fw-600">
+            <i class="fa fa-calendar-check me-2"></i>{% trans "Записатися онлайн" %}
+          </a>
+          <a href="{% url 'pages:services' %}" class="btn btn-outline-light btn-lg rounded-pill px-5 fw-600">
+            {% trans "Наші послуги" %}
+          </a>
+        </div>
+        <div class="d-flex gap-4 mt-5 flex-wrap">
+          <div class="hero-stat"><span class="hero-stat-num">15+</span><span class="hero-stat-label">{% trans "років досвіду" %}</span></div>
+          <div class="hero-stat"><span class="hero-stat-num">8 000+</span><span class="hero-stat-label">{% trans "пацієнтів" %}</span></div>
+          <div class="hero-stat"><span class="hero-stat-num">98%</span><span class="hero-stat-label">{% trans "задоволених клієнтів" %}</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6 d-none d-lg-flex justify-content-end" data-aos="fade-left">
+        <div class="hero-card-wrap">
+          <div class="hero-img-placeholder"><i class="fa fa-tooth"></i></div>
+          <div class="hero-float-card">
+            <i class="fa fa-shield-halved text-primary me-2"></i>
+            <div>
+              <div class="fw-600 small">{% trans "Безпечно та комфортно" %}</div>
+              <div class="text-muted" style="font-size:.75rem">{% trans "Стерильність гарантована" %}</div>
+            </div>
+          </div>
+          <div class="hero-float-card2">
+            <i class="fa fa-star text-warning me-2"></i>
+            <div>
+              <div class="fw-600 small">{% trans "Рейтинг 4.9 / 5" %}</div>
+              <div class="text-muted" style="font-size:.75rem">{% trans "На основі 1200+ відгуків" %}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
+  </div>
+</section>
+
+<!-- Переваги -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa fa-shield-halved"></i></div>
+          <h6 class="fw-700 mt-3 mb-1">{% trans "Безпечно" %}</h6>
+          <p class="text-muted small mb-0">{% trans "Повна стерилізація інструментів та одноразові витратні матеріали" %}</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa fa-microscope"></i></div>
+          <h6 class="fw-700 mt-3 mb-1">{% trans "Сучасно" %}</h6>
+          <p class="text-muted small mb-0">{% trans "Цифрові технології 3D-діагностики та лікування" %}</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa fa-user-doctor"></i></div>
+          <h6 class="fw-700 mt-3 mb-1">{% trans "Професійно" %}</h6>
+          <p class="text-muted small mb-0">{% trans "Лікарі з досвідом від 10 років та постійним підвищенням кваліфікації" %}</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa fa-heart"></i></div>
+          <h6 class="fw-700 mt-3 mb-1">{% trans "З турботою" %}</h6>
+          <p class="text-muted small mb-0">{% trans "Комфортна атмосфера та індивідуальний підхід до кожного" %}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Послуги -->
+<section class="py-5 bg-light-custom">
+  <div class="container">
+    <div class="section-header text-center mb-5" data-aos="fade-up">
+      <span class="section-badge">{% trans "Що ми лікуємо" %}</span>
+      <h2 class="section-title">{% trans "Наші послуги" %}</h2>
+      <p class="section-desc">{% trans "Повний спектр стоматологічної допомоги для всієї родини" %}</p>
+    </div>
+    <div class="row g-4">
+      {% if services %}
+        {% for service in services %}
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ forloop.counter0 }}00">
+          <div class="service-card">
+            <div class="service-icon"><i class="{{ service.icon }}"></i></div>
+            <h5 class="fw-700 mt-3 mb-2">{{ service.name }}</h5>
+            <p class="text-muted small mb-3">{{ service.description }}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="service-price">{% trans "від" %} {{ service.price_from }} ₴</span>
+              <a href="{% url 'appointments:book' %}?service={{ service.id }}" class="btn btn-sm btn-outline-primary rounded-pill px-3">{% trans "Записатися" %}</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="col-12 text-center py-4">
+          <a href="{% url 'appointments:book' %}" class="btn btn-primary rounded-pill px-4">{% trans "Записатися на консультацію" %}</a>
+        </div>
+      {% endif %}
+    </div>
+    <div class="text-center mt-5" data-aos="fade-up">
+      <a href="{% url 'pages:services' %}" class="btn btn-primary btn-lg rounded-pill px-5">{% trans "Всі послуги" %} <i class="fa fa-arrow-right ms-2"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section py-5">
+  <div class="container">
+    <div class="cta-inner" data-aos="zoom-in">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h3 class="text-white fw-700 mb-2">{% trans "Первинна консультація — безкоштовно!" %}</h3>
+          <p class="text-white-50 mb-0">{% trans "Запишіться прямо зараз і отримайте безкоштовний огляд у нашого спеціаліста" %}</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a href="{% url 'appointments:book' %}" class="btn btn-light btn-lg rounded-pill px-5 fw-600 text-primary">
+            {% trans "Записатися безкоштовно" %}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Команда -->
+<section class="py-5">
+  <div class="container">
+    <div class="section-header text-center mb-5" data-aos="fade-up">
+      <span class="section-badge">{% trans "Наші спеціалісти" %}</span>
+      <h2 class="section-title">{% trans "Команда лікарів" %}</h2>
+      <p class="section-desc">{% trans "Досвідчені та уважні професіонали" %}</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+        <div class="doctor-card">
+          <div class="doctor-avatar"><i class="fa fa-user-doctor"></i></div>
+          <div class="p-4 text-center">
+            <h6 class="fw-700 mb-1">{% trans "Візіров Олексій Сергійович" %}</h6>
+            <span class="doctor-spec">{% trans "Головний лікар, імплантолог" %}</span>
+            <p class="text-muted small mt-2 mb-0">{% trans "Стаж 18 років · К.м.н." %}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="doctor-card">
+          <div class="doctor-avatar doctor-avatar-2"><i class="fa fa-user-doctor"></i></div>
+          <div class="p-4 text-center">
+            <h6 class="fw-700 mb-1">{% trans "Петренко Марія Юріївна" %}</h6>
+            <span class="doctor-spec">{% trans "Ортодонт" %}</span>
+            <p class="text-muted small mt-2 mb-0">{% trans "Стаж 11 років" %}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="doctor-card">
+          <div class="doctor-avatar doctor-avatar-3"><i class="fa fa-user-doctor"></i></div>
+          <div class="p-4 text-center">
+            <h6 class="fw-700 mb-1">{% trans "Коваленко Олена Іванівна" %}</h6>
+            <span class="doctor-spec">{% trans "Хірург, імплантолог" %}</span>
+            <p class="text-muted small mt-2 mb-0">{% trans "Стаж 14 років" %}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="doctor-card">
+          <div class="doctor-avatar doctor-avatar-4"><i class="fa fa-user-doctor"></i></div>
+          <div class="p-4 text-center">
+            <h6 class="fw-700 mb-1">{% trans "Мельник Дмитро Павлович" %}</h6>
+            <span class="doctor-spec">{% trans "Дитячий стоматолог" %}</span>
+            <p class="text-muted small mt-2 mb-0">{% trans "Стаж 9 років" %}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Відгуки -->
+<section class="py-5 bg-light-custom">
+  <div class="container">
+    <div class="section-header text-center mb-5" data-aos="fade-up">
+      <span class="section-badge">{% trans "Відгуки" %}</span>
+      <h2 class="section-title">{% trans "Що кажуть пацієнти" %}</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">{% trans "\"Довго боялась стоматологів, але тут все змінилось. Лікар дуже уважний, лікування пройшло без болю. Дякую!\"" %}</p>
+          <div class="review-author">
+            <div class="review-avatar">АК</div>
+            <div>
+              <div class="fw-600 small">{% trans "Анна Коваль" %}</div>
+              <div class="text-muted" style="font-size:.75rem">{% trans "Пацієнт з 2022 року" %}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="review-card review-card-featured">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">{% trans "\"Поставили імплант — результат перевершив очікування. Команда професійна, обладнання сучасне. Рекомендую всім!\"" %}</p>
+          <div class="review-author">
+            <div class="review-avatar">МВ</div>
+            <div>
+              <div class="fw-600 small">{% trans "Михайло Василенко" %}</div>
+              <div class="text-muted" style="font-size:.75rem">{% trans "Пацієнт з 2020 року" %}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">{% trans "\"Привела дитину — вона була у захваті! Дитячий лікар знайшов підхід, малюк більше не боїться зубного. Величезне дякую!\"" %}</p>
+          <div class="review-author">
+            <div class="review-avatar">ОС</div>
+            <div>
+              <div class="fw-600 small">{% trans "Ольга Семенова" %}</div>
+              <div class="text-muted" style="font-size:.75rem">{% trans "Пацієнт з 2023 року" %}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Контакти strip -->
+<section class="contact-strip py-4">
+  <div class="container">
+    <div class="row g-3 justify-content-center text-center">
+      <div class="col-md-3">
+        <div class="contact-strip-item">
+          <i class="fa fa-phone-volume"></i>
+          <div>
+            <div class="small text-muted">{% trans "Телефон" %}</div>
+            <a href="tel:+380441234567" class="fw-700 text-dark text-decoration-none">+38 (044) 123-45-67</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="contact-strip-item">
+          <i class="fa fa-location-dot"></i>
+          <div>
+            <div class="small text-muted">{% trans "Адреса" %}</div>
+            <span class="fw-700">{% trans "вул. Хрещатик, 1, Київ" %}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="contact-strip-item">
+          <i class="fa fa-clock"></i>
+          <div>
+            <div class="small text-muted">{% trans "Графік роботи" %}</div>
+            <span class="fw-700">{% trans "Пн–Пт 9:00–20:00" %}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="contact-strip-item">
+          <i class="fab fa-instagram"></i>
+          <div>
+            <div class="small text-muted">{% trans "Instagram" %}</div>
+            <a href="#" class="fw-700 text-dark text-decoration-none">@vizirovdental</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

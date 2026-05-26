@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Про клініку" %} — Vizirov Dental Clinic{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container text-center">
+    <h1 class="page-hero-title" data-aos="fade-up">{% trans "Про клініку" %}</h1>
+    <p class="page-hero-desc" data-aos="fade-up" data-aos-delay="100">{% trans "15 років бездоганної роботи та тисячі задоволених пацієнтів" %}</p>
+    <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="150">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a href="{% url 'pages:home' %}">{% trans "Головна" %}</a></li>
+        <li class="breadcrumb-item active">{% trans "Про клініку" %}</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="about-img-wrap">
+          <div class="about-img-placeholder"><i class="fa fa-hospital"></i></div>
+          <div class="about-stat-badge">
+            <span class="about-stat-num">15+</span>
+            <span class="about-stat-label">{% trans "років на ринку" %}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="section-badge">{% trans "Наша історія" %}</span>
+        <h2 class="section-title mt-2">{% trans "Клініка, якій довіряють" %}</h2>
+        <p class="text-muted">{% trans "Клініка Vizirov Dental заснована у 2009 році з однією метою — зробити якісну стоматологію доступною та комфортною для кожного. За ці роки ми виросли з невеликого кабінету до сучасного медичного центру з 12 кабінетами та командою з 20 спеціалістів у самому серці Києва." %}</p>
+        <p class="text-muted">{% trans "Ми постійно інвестуємо в найновіше обладнання та підвищення кваліфікації наших лікарів, щоб ви отримували лікування на рівні європейських стандартів." %}</p>
+        <div class="row g-3 mt-2">
+          {% for feat in features %}{% endfor %}
+          <div class="col-6"><div class="about-feature"><i class="fa fa-check-circle text-primary me-2"></i><span>{% trans "Ліцензована клініка" %}</span></div></div>
+          <div class="col-6"><div class="about-feature"><i class="fa fa-check-circle text-primary me-2"></i><span>{% trans "Цифровий рентген" %}</span></div></div>
+          <div class="col-6"><div class="about-feature"><i class="fa fa-check-circle text-primary me-2"></i><span>{% trans "3D-томографія" %}</span></div></div>
+          <div class="col-6"><div class="about-feature"><i class="fa fa-check-circle text-primary me-2"></i><span>{% trans "Лазерне лікування" %}</span></div></div>
+          <div class="col-6"><div class="about-feature"><i class="fa fa-check-circle text-primary me-2"></i><span>{% trans "Седація (наркоз)" %}</span></div></div>
+          <div class="col-6"><div class="about-feature"><i class="fa fa-check-circle text-primary me-2"></i><span>{% trans "Дитяча зона" %}</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light-custom">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="stats-card"><div class="stats-num">8 000+</div><div class="stats-label">{% trans "пацієнтів" %}</div></div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="stats-card"><div class="stats-num">20</div><div class="stats-label">{% trans "лікарів" %}</div></div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="stats-card"><div class="stats-num">15</div><div class="stats-label">{% trans "років досвіду" %}</div></div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="stats-card"><div class="stats-num">98%</div><div class="stats-label">{% trans "задоволених клієнтів" %}</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="section-header text-center mb-5" data-aos="fade-up">
+      <span class="section-badge">{% trans "Спеціалісти" %}</span>
+      <h2 class="section-title">{% trans "Наша команда" %}</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+        <div class="doctor-card">
+          <div class="doctor-avatar"><i class="fa fa-user-doctor"></i></div>
+          <div class="p-4 text-center">
+            <h6 class="fw-700 mb-1">{% trans "Візіров Олексій Сергійович" %}</h6>
+            <span class="doctor-spec">{% trans "Головний лікар, імплантолог" %}</span>
+            <p class="text-muted small mt-2 mb-0">{% trans "Стаж 18 років · К.м.н." %}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="doctor-card">
+          <div class="doctor-avatar doctor-avatar-2"><i class="fa fa-user-doctor"></i></div>
+          <div class="p-4 text-center">
+            <h6 class="fw-700 mb-1">{% trans "Петренко Марія Юріївна" %}</h6>
+            <span class="doctor-spec">{% trans "Ортодонт" %}</span>
+            <p class="text-muted small mt-2 mb-0">{% trans "Стаж 11 років" %}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="doctor-card">
+          <div class="doctor-avatar doctor-avatar-3"><i class="fa fa-user-doctor"></i></div>
+          <div class="p-4 text-center">
+            <h6 class="fw-700 mb-1">{% trans "Коваленко Олена Іванівна" %}</h6>
+            <span class="doctor-spec">{% trans "Хірург, імплантолог" %}</span>
+            <p class="text-muted small mt-2 mb-0">{% trans "Стаж 14 років" %}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="doctor-card">
+          <div class="doctor-avatar doctor-avatar-4"><i class="fa fa-user-doctor"></i></div>
+          <div class="p-4 text-center">
+            <h6 class="fw-700 mb-1">{% trans "Мельник Дмитро Павлович" %}</h6>
+            <span class="doctor-spec">{% trans "Дитячий стоматолог" %}</span>
+            <p class="text-muted small mt-2 mb-0">{% trans "Стаж 9 років" %}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

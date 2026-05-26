@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Контакти" %} — Vizirov Dental Clinic{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container text-center">
+    <h1 class="page-hero-title" data-aos="fade-up">{% trans "Контакти" %}</h1>
+    <p class="page-hero-desc" data-aos="fade-up" data-aos-delay="100">{% trans "Ми завжди раді вас бачити" %}</p>
+    <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="150">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a href="{% url 'pages:home' %}">{% trans "Головна" %}</a></li>
+        <li class="breadcrumb-item active">{% trans "Контакти" %}</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fa fa-location-dot"></i></div>
+          <h6 class="fw-700 mt-3">{% trans "Адреса" %}</h6>
+          <p class="text-muted small mb-0">{% trans "вул. Хрещатик, 1" %}<br>{% trans "Київ, 01001" %}<br>{% trans "м. Хрещатик (2 хв. пішки)" %}</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fa fa-phone"></i></div>
+          <h6 class="fw-700 mt-3">{% trans "Телефон" %}</h6>
+          <p class="text-muted small mb-0">
+            <a href="tel:+380441234567" class="text-muted text-decoration-none d-block">+38 (044) 123-45-67</a>
+            <a href="tel:+380671234567" class="text-muted text-decoration-none d-block">+38 (067) 123-45-67</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fa fa-envelope"></i></div>
+          <h6 class="fw-700 mt-3">Email</h6>
+          <p class="text-muted small mb-0">
+            <a href="mailto:info@vizirovdental.ua" class="text-muted text-decoration-none d-block">info@vizirovdental.ua</a>
+            <a href="mailto:admin@vizirovdental.ua" class="text-muted text-decoration-none d-block">admin@vizirovdental.ua</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fa fa-clock"></i></div>
+          <h6 class="fw-700 mt-3">{% trans "Графік роботи" %}</h6>
+          <p class="text-muted small mb-0">{% trans "Пн – Пт: 9:00 – 20:00" %}<br>{% trans "Сб: 9:00 – 16:00" %}<br>{% trans "Нд: вихідний" %}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="map-placeholder">
+          <i class="fa fa-map-location-dot fa-3x text-primary mb-3 d-block"></i>
+          <h5 class="fw-700">{% trans "Vizirov Dental на карті" %}</h5>
+          <p class="text-muted">{% trans "вул. Хрещатик, 1, Київ" %}</p>
+          <a href="https://maps.google.com" target="_blank" class="btn btn-primary rounded-pill px-4">
+            <i class="fa fa-map me-2"></i>{% trans "Відкрити в Google Maps" %}
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="contact-form-wrap p-4">
+          <h4 class="fw-700 mb-4">{% trans "Напишіть нам" %}</h4>
+          <form>
+            {% csrf_token %}
+            <div class="mb-3">
+              <label class="form-label fw-500">{% trans "Ваше ім'я" %}</label>
+              <input type="text" class="form-control" placeholder="{% trans "Іваненко Іван" %}">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-500">{% trans "Телефон" %}</label>
+              <input type="tel" class="form-control" placeholder="+38 (0__) ___-__-__">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-500">Email</label>
+              <input type="email" class="form-control" placeholder="email@example.com">
+            </div>
+            <div class="mb-4">
+              <label class="form-label fw-500">{% trans "Повідомлення" %}</label>
+              <textarea class="form-control" rows="4" placeholder="{% trans "Ваше запитання..." %}"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 rounded-pill py-2 fw-600">
+              <i class="fa fa-paper-plane me-2"></i>{% trans "Надіслати" %}
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
