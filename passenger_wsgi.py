@@ -1,10 +1,5 @@
-import sys
 import os
-
-# Add the project directory to the path
-INTERP = os.path.join(os.environ['HOME'], 'mysite', 'venv', 'bin', 'python3')
-if sys.executable != INTERP:
-    os.execl(INTERP, INTERP, *sys.argv)
+import sys
 
 sys.path.insert(0, os.path.join(os.environ['HOME'], 'mysite'))
 
